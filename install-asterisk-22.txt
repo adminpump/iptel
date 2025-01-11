@@ -9,3 +9,5 @@ cd asterisk-22.1.1/
 ./contrib/scripts/install_prereq 
 ./contrib/scripts/install_prereq install
 ./configure
+
+make menuselect
