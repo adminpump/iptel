@@ -1,1 +1,11 @@
+#!/bin/sh
 
+wget https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-22-current.tar.gz
+tar -x -zf asterisk-22-current.tar.gz asterisk-22.1.1/
+
+ls asterisk-22.1.1/
+cd asterisk-22.1.1/
+ 
+./contrib/scripts/install_prereq 
+./contrib/scripts/install_prereq install
+./configure
